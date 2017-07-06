@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="jumbotron">
+            <h1>Hello, <strong>You are logged in as HR</strong></h1>
+            <p>You are on your Dashboard</p>
+            <p>{{ request.user.username }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
